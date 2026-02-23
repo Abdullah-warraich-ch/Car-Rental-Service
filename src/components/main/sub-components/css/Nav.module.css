@@ -1,0 +1,14 @@
+.v {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.li {
+  padding: 20px;
+}
+.li:hover {
+  background-color: #ebebeb;
+}
+
+

@@ -1,0 +1,21 @@
+.mainDiv {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0%;
+  left: 0%;
+  z-index: 10000;
+}
+.upperDiv {
+  height: 100%;
+  width: 100%;
+}
+.navDiv {
+  background-color: white;
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  left: 0;
+}
