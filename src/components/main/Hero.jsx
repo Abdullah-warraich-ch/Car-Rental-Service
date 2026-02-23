@@ -22,16 +22,18 @@ function Hero() {
           placeholder="Precise Address"
         />
         <button className={styles.heroButton}>Search</button>
-        <p style={{ color: "gray" }}>
-          Car rental by locals with trip liability insurance included
-        </p>
-        <div style={{ display: "flex", flexDirection: "row", gap: "20px" }}>
-          <img src="play.png" alt="" srcset="" />
-          <img src="apple.png" alt="" srcset="" />
+        <div className={styles.center}>
+          <p style={{ color: "gray" }}>
+            Car rental by locals with trip liability insurance included
+          </p>
+          <div style={{ display: "flex", flexDirection: "row", gap: "20px" }}>
+            <img src="play.png" alt="" srcset="" />
+            <img src="apple.png" alt="" srcset="" />
+          </div>
+          <p style={{ color: "gray" }}>
+            4.6/5 from 100 000+ ratings in app stores
+          </p>
         </div>
-        <p style={{ color: "gray" }}>
-          4.6/5 from 100 000+ ratings in app stores
-        </p>
       </div>
       <div className={styles.heroPngDiv}>
         <img src="hand-ga-app-phone2-US.png" alt="" srcset="" />
