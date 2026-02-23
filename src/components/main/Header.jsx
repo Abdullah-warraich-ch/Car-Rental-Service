@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styles from "./css/Header.module.css";
-import Button from "./Button";
+
 import { Menu } from "lucide-react";
-import MenuBar from "./Menu";
-import Nav from "./sub-components/Nav";
+import MenuBar from "./header-sub-components/Menu";
+import Nav from "./header-sub-components/Nav";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);

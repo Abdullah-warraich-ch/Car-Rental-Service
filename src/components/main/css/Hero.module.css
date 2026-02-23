@@ -1,0 +1,45 @@
+.heroContainer {
+  max-width: 100%;
+  padding: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  color: var(--text);
+}
+.heroBG {
+  position: absolute;
+  z-index: -100;
+  right: -100px;
+  top: -40px;
+}
+.details {
+  width: 45%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.heroPngDiv {
+  width: 30%;
+  margin-right: auto;
+}
+.heroInput {
+  padding: 20px;
+  border: 3px solid rgb(195, 195, 195);
+  border-radius: 50px;
+}
+.heroInput:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+.heroButton {
+  padding: 30px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 2px;
+  background-image: var(--primary-gradient);
+}

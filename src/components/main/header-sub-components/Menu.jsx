@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "./sub-components/Nav";
+import Nav from "./Nav";
 import styles from "./css/Menu.module.css";
 
 function MenuBar({ action }) {

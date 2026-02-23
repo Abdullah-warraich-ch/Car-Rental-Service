@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./css/Nav.module.css";
-import Button from "../Button";
+import Button from "../../elements/Button";
 
 function Nav({ style }) {
   return (
