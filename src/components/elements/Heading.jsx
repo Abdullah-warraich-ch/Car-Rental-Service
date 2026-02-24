@@ -4,10 +4,10 @@ function Heading({ children }) {
   return (
     <div
       style={{
-        fontSize: "70px",
-        lineHeight: 1,
+        fontSize: "56px",
+        lineHeight: "56px",
         textWrap: "wrap",
-        letterSpacing: "-2px",
+        letterSpacing: "-2.24px",
       }}
     >
       {children}

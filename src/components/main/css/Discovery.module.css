@@ -1,0 +1,82 @@
+.imagediv {
+  position: absolute;
+  height: 90%;
+  left: 0;
+  top: 30px;
+}
+.image {
+  width: 400px;
+  height: 578px;
+  object-fit: fill;
+  border-radius: 20px;
+  transition: 1s ease-in;
+}
+.disContainer {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  border-radius: 50px;
+  height: 100%;
+  position: relative;
+  justify-content: end;
+}
+.contentDiv {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 10%;
+  gap: 25px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+
+  padding: 5% 5% 5% 25%;
+}
+.image2 {
+  display: none;
+}
+.button {
+  width: 30%;
+  padding: 25px;
+  background-color: white;
+  border-radius: 50px;
+  border: 2px solid var(--primary);
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+.button:hover {
+  transform: translateY(-4px);
+}
+
+@media screen and (max-width: 768px) {
+  .imagediv {
+    display: none;
+  }
+  .image {
+    display: none;
+  }
+  .disContainer {
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+  }
+  .contentDiv {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin: auto;
+    padding-top: 60px;
+  }
+  .image2 {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    width: 100%;
+    display: block;
+  }
+  .button {
+    width: 100%;
+  }
+}

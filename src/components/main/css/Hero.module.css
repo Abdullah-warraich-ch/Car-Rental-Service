@@ -43,6 +43,12 @@
   letter-spacing: 2px;
   background-image: var(--primary-gradient);
 }
+.center {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
 
 @media screen and (max-width: 720px) {
   .heroPngDiv {
@@ -56,10 +62,7 @@
     display: none;
   }
   .center {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
   }
 }
