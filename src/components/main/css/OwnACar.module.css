@@ -50,6 +50,8 @@
     flex-direction: column;
     height: auto;
     gap: 20px;
+    max-width: 90%;
+    padding: 15px;
   }
   .content {
     width: 100%;
