@@ -1,0 +1,17 @@
+.cityScrollText {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.cityScroll {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  gap: 10px;
+  max-width: 90%;
+  margin: 10px auto;
+  overflow-x: auto;
+}
+.cityScroll::-webkit-scrollbar {
+  display: none;
+}
