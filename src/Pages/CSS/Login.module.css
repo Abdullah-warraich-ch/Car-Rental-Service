@@ -105,4 +105,7 @@
   .imagediv {
     display: none;
   }
+  .inputDiv h1 {
+    font-size: 12px;
+  }
 }
