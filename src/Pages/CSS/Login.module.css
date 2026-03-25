@@ -2,20 +2,21 @@
   height: 100vh;
   display: flex;
   overflow: hidden;
+  position: relative;
 }
 .formcon {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .form {
   border: 1px solid rgb(201, 201, 201);
   padding: 40px 20px;
-  height: 50%;
-  margin-bottom: 10px;
-  border-radius: 25px;
+  height: 40%;
+  margin-bottom: 100px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,23 +24,22 @@
 }
 .inputDiv {
   width: 100%;
-  height: 70%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 10px;
 }
 .inputDiv input {
   padding: 15px;
   border-radius: 15px;
   border-color: rgb(255, 255, 255);
-  outline: 2px solid rgb(224, 224, 224);
+  outline: 1px solid rgb(224, 224, 224);
   border: 0;
   width: 100%;
   box-sizing: border-box;
   padding-left: 40px;
 }
-.inputDiv h1 {
+.form h1 {
   font-size: 20px;
   font-weight: 600;
 }
@@ -51,7 +51,7 @@
   display: flex;
   justify-content: end;
   gap: 20px;
-  height: 20%;
+  height: 15%;
 }
 .loginbtn {
   padding: 4px 8px;
@@ -81,7 +81,7 @@
   background-color: var(--primary);
 }
 .logo {
-  margin: 70px 0;
+  margin: 30px 0;
 }
 .imagediv {
   width: 50%;
@@ -92,9 +92,17 @@
   object-fit: cover;
 }
 .icon {
-  color: "rgb(214, 214, 214)";
+  color: rgb(201, 201, 201);
 }
-
+.circle {
+  position: absolute;
+  background-color: var(--primary);
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  top: -50px;
+  left: -80px;
+}
 .subInput:focus-within .icon {
   color: var(--primary);
 }

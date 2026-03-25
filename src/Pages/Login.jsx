@@ -9,22 +9,21 @@ function Login() {
   let EyeIcon = passwordType === "password" ? EyeClosed : Eye;
 
   function togglePass() {
-    if (passwordType === "password") {
-      setPasswordType("text");
-    } else {
+    setPasswordType("text");
+    setTimeout(() => {
       setPasswordType("password");
-    }
-    console.log("Toggle Clicked");
+    }, 1500);
   }
   return (
     <div className={styles.loginCon}>
+      <div className={styles.circle}></div>
       <div className={styles.formcon}>
         <div className={styles.logo}>
           <img src="logo.svg" alt="Logo" srcset="" />
         </div>
         <form action="" method="post" className={styles.form}>
+          <h1>Enter Your Credentials</h1>
           <div className={styles.inputDiv}>
-            <h1>Enter Your Credentials</h1>
             <div
               className={styles.subInput}
               style={{ position: "relative", width: "100%" }}
@@ -71,9 +70,6 @@ function Login() {
             <button className={styles.loginbtn}>LogIn</button>
           </div>
         </form>
-        <div>
-          <Footer />
-        </div>
       </div>
       <div className={styles.imagediv}>
         <img src="driver2.jpg" alt="" srcset="" />
