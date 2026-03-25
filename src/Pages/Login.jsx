@@ -5,50 +5,14 @@ import Footer from "../components/main/Footer";
 import styles from "./CSS/Login.module.css";
 function Login() {
   const [passwordType, setPasswordType] = useState("password");
-  
 
-  let EyeIcon = (
-    <EyeClosed
-      className={styles.icon}
-      onClick={togglePass}
-      style={{
-        position: "absolute",
-        top: "10px",
-        right: "10px",
-        zIndex: "10",
-      }}
-    />
-  );
+  let EyeIcon = passwordType === "password" ? EyeClosed : Eye;
 
   function togglePass() {
     if (passwordType === "password") {
       setPasswordType("text");
-      EyeIcon = (
-        <Eye
-          className={styles.icon}
-          onClick={togglePass}
-          style={{
-            position: "absolute",
-            top: "10px",
-            right: "10px",
-            zIndex: "10",
-          }}
-        />
-      );
     } else {
       setPasswordType("password");
-      EyeIcon = (
-        <EyeClosed
-          className={styles.icon}
-          onClick={togglePass}
-          style={{
-            position: "absolute",
-            top: "10px",
-            right: "10px",
-            zIndex: "10",
-          }}
-        />
-      );
     }
     console.log("Toggle Clicked");
   }
@@ -89,7 +53,16 @@ function Login() {
                 }}
               />
               <input type={passwordType} name="" id="" placeholder="Password" />
-              {EyeIcon}
+              <EyeIcon
+                className={styles.icon}
+                onClick={togglePass}
+                style={{
+                  position: "absolute",
+                  top: "10px",
+                  right: "10px",
+                  zIndex: "10",
+                }}
+              />
             </div>
           </div>
           <div className={styles.buttonDiv}>
